@@ -1,0 +1,67 @@
+{
+  "name": "premium-withbundles",
+  "version": "0.0.42",
+  "fullName": "Good template",
+  "joshfire": {
+    "devices": [
+      {
+        "devices": ["phone","tablet"]
+      },
+      {
+        "devices":"desktop"
+      },
+      {
+        "devices":"tv"
+      }
+    ],
+    "premium": true,
+    "hooks":[],
+
+    "bundles":{
+
+      "all":{
+        "title":"Mega pack",
+        "devices":"*",
+
+        "monthly":{
+          "subscription":{
+            "eur": 39,
+            "usd": 53
+          },
+          "price":{
+            "eur":10,
+            "usd":20
+          }
+        },
+        "yearly":{
+          "subscription":{
+            "eur": 339,
+            "usd": 353
+          }
+        }
+        
+      },
+
+      "only-phone":{
+        "title":"Only phones",
+        "devices":"phone",
+
+        "monthly":{
+          "subscription":{
+            "eur": 39,
+            "usd": 53
+          }
+        }
+      },
+      "combo-phone-tablet":{
+        "title":"Mobile combo oneshot",
+        "devices":["phone","tablet"],
+
+        "price":{
+          "eur":300,
+          "usd":400
+        }
+      }
+    }
+  }
+}
