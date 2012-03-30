@@ -17,27 +17,23 @@
     "premium": true,
     "hooks":[],
 
-    "bundles":{
+    "prices":{
 
-      "all":{
+      "*":{
         "title":"Mega pack",
         "devices":"*",
 
         "monthly":{
-          "subscription":{
-            "eur": 39,
-            "usd": 53
-          },
-          "price":{
-            "eur":10,
-            "usd":20
-          }
+          "eur": 39,
+          "usd": 53
+        },
+        "onetime":{
+          "eur":10,
+          "usd":20
         },
         "yearly":{
-          "subscription":{
-            "eur": 339,
-            "usd": 353
-          }
+          "eur": 339,
+          "usd": 353
         }
         
       },
@@ -47,17 +43,15 @@
         "devices":"phone",
 
         "monthly":{
-          "subscription":{
-            "eur": 39,
-            "usd": 53
-          }
+          "eur": 39,
+          "usd": 53
         }
       },
       "combo-phone-tablet":{
         "title":"Mobile combo oneshot",
         "devices":["phone","tablet"],
 
-        "price":{
+        "onetime":{
           "eur":300,
           "usd":400
         }
